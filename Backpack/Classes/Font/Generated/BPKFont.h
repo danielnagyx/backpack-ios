@@ -19,26 +19,60 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @class UIFont;
+/**
+  BPKFont is the entry point for the Backpack typography stack. It expose the
+  supported text styles as static methods.
+*/
 @interface BPKFont: NSObject
 
+/**
+  The `textXs` text style from the Backpack typograhpy stack.
+*/
 + (UIFont *)textXs;
 
+/**
+  The `textXsEmphasized` text style from the Backpack typograhpy stack.
+*/
 + (UIFont *)textXsEmphasized;
 
+/**
+  The `textSm` text style from the Backpack typograhpy stack.
+*/
 + (UIFont *)textSm;
 
+/**
+  The `textSmEmphasized` text style from the Backpack typograhpy stack.
+*/
 + (UIFont *)textSmEmphasized;
 
+/**
+  The `textBase` text style from the Backpack typograhpy stack.
+*/
 + (UIFont *)textBase;
 
+/**
+  The `textBaseEmphasized` text style from the Backpack typograhpy stack.
+*/
 + (UIFont *)textBaseEmphasized;
 
+/**
+  The `textLg` text style from the Backpack typograhpy stack.
+*/
 + (UIFont *)textLg;
 
+/**
+  The `textLgEmphasized` text style from the Backpack typograhpy stack.
+*/
 + (UIFont *)textLgEmphasized;
 
+/**
+  The `textXl` text style from the Backpack typograhpy stack.
+*/
 + (UIFont *)textXl;
 
+/**
+  The `textXlEmphasized` text style from the Backpack typograhpy stack.
+*/
 + (UIFont *)textXlEmphasized;
 
 @end

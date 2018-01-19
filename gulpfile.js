@@ -62,6 +62,12 @@ const parseColor = (color) => {
   };
 };
 
+const hexColor = (color) => {
+  const parsedColor = tinycolor(color);
+
+  return parsedColor.toHexString();
+};
+
 const convertFontWeight = (weightString) => {
   const weight = WEIGHT_MAP[weightString.trim()];
 
@@ -76,7 +82,7 @@ const parseTokens = (tokensData) => {
   const colors = _
                   .chain(tokensData.properties)
                   .filter(({ type }) => type === 'color')
-                  .map(({ value, ...rest }) => ({ value: parseColor(value), ...rest }))
+                  .map(({ value, ...rest }) => ({ value: parseColor(value), ...rest, hex: hexColor(value) }))
                   .value();
 
   const emphazisedWeight = convertFontWeight(

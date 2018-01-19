@@ -19,6 +19,7 @@
 #ifndef __BACKPACK__
     #define __BACKPACK__
 
-    #import "BPKColor.h"
+    #import "Color.h"
+    #import "Font.h"
 #endif
 
